@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pešek</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Special+Gothic+Expanded+One&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Special Gothic Expanded One', sans-serif;
+      background-color: #000;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background: #000;
+      padding: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      flex-wrap: wrap;
+    }
+    .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 30px;
+    }
+    .video-wrapper {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .video-wrapper:hover {
+    transform: scale(1.03);
+    box-shadow: 0 10px 20px rgba(255, 255, 255, 0.1);
+    }
+    .video-item {
+    text-align: center;
+    }
+    .project-title {
+    margin-top: 10px;
+    font-size: 1rem;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 1.8rem;
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      gap: 15px;
+      position: absolute;
+      left: 20px;
+      flex-wrap: wrap;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      padding: 40px 20px;
+      max-width: 1000px;
+      margin: auto;
+    }
+    .video-sample {
+      margin-top: 30px;
+    }
+    .video-wrapper {
+      position: relative;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+      border-radius: 15px;
+    }
+    .video-wrapper iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+      border-radius: 15px;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #000;
+      border-top: 1px solid #000;
+      margin-top: 40px;
+    }
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 1.2rem;
+        position: static;
+        transform: none;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+      nav {
+        position: static;
+        justify-content: center;
+        width: 100%;
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="home.html">Portfolio</a>
+      <a href="contact.html">Kontakt</a>
+    </nav>
+    <h1>Pešek</h1>
+  </header>
+
+  <div class="container" id="home">
+    <section class="about">
+    
+    </section>
+
+    <section class="video-sample">
+      <h2>Portfolio</h2>
+      <p></p>
+      <div class="video-grid">
+        <div class="video-item">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/jPdJ4hhsbLk?si=4VmHZr-otYbSE4gz" allowfullscreen></iframe>
+          </div>
+          <p class="project-title">Rybova mše vánoční - střih, kamera</p>
+        </div>
+        <div class="video-item">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/tA7nG6Xgm3Q?si=G1sQbWKUDZvlH-mg" allowfullscreen></iframe>
+          </div>
+          <p class="project-title">ČAS - střih, kamera</p>
+        </div>
+        <div class="video-item">
+          <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/z3anqmVt1dk?si=XB2cNHgPkb8_e3MP" allowfullscreen></iframe>
+          </div>
+          <p class="project-title">Pozvánka na Scholu Pragensis 2024 - střih, kamera</p>
+        </div>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; Martin Pešek</p>
+  </footer>
+</body>
+</html>
